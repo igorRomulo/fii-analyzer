@@ -1,0 +1,28 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+#Virtual Environments
+venv/
+.venv/
+
+#Environment Variables and Secrets
+.env
+.env.local
+
+#Build and Packaging Artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+#Testing and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+.ipynb_checkpoints/
