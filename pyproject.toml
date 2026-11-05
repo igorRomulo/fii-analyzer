@@ -8,9 +8,17 @@ dependencies = [
     "httpx>=0.28.1",
     "pandas>=3.1.0",
     "psycopg2-binary>=2.9.13",
+    "pybreaker>=1.4.1",
+    "pydantic-settings>=2.16.2",
     "sqlalchemy>=2.1.6",
+    "tenacity>=9.2.1",
 ]
 
 [build-system]
 requires = ["uv_build>=0.13.6,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
