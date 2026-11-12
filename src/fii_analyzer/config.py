@@ -14,14 +14,15 @@ class Settings(BaseSettings):
     cvm_url_monthly_fii: str = "inf_mensal_fii_"
     data_start_year: int = 2016
 
-    # Claude
-    anthropic_api_key: str = ""
-    claude_model: str = ""
+    # Gemini (ADR-001)
+    google_api_key: str = ""
+    gemini_model: str = "gemini-3.5-flash-lite"
 
     model_config = {"env_file": ".env"}
 
 
 settings = Settings()
+
 
 def setup_logging():
     logging.basicConfig(

@@ -17,6 +17,7 @@ breaker = pybreaker.CircuitBreaker(fail_max=5, reset_timeout=30)
 )
 @breaker
 
+
 def fetch_fii_data(url: str):
     year = datetime.now().year
     request_url = f"{settings.cvm_base_url}/{url}{year}.zip"
