@@ -45,6 +45,7 @@ def extract_data(data):
                             logger.exception("Failed to process %s", file)
                             continue
 
+
 def build_data(file, year):
     rows = []
     encoding = "cp1252" if file.name != f"inf_mensal_fii_ativo_passivo_{year}.csv" else "utf-8"
@@ -65,6 +66,7 @@ def build_data(file, year):
 
     logger.info("Parsed %d rows from %s", len(rows), file.name)
     return rows
+
 
 def strip_accents(text: str) -> str:
     return "".join(

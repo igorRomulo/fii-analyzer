@@ -23,6 +23,7 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
+
 def setup_logging():
     logging.basicConfig(
         level=getattr(logging, settings.log_level),
